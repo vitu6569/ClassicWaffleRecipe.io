@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-page: #EAEAEA;
+    --bg-recipe: #FFFFFF;
+    --title-and-caption: #1B1B1B;
+    --footer-and-subtitles: #8F8F8F;
+    --other-text: #39393A;
+
+    /* title */
+    --ft-title: 1.75rem;
+    /* caption */
+    --ft-caption: 1.25rem;
+    /* list and paragraphs */
+    --list-and-paragraphs: 1rem;
+    /* footer and subtitle of image */
+    --footer-and-subtitles-of-image: 0.75rem;
+}
+body {
+    background: var(--bg-page);
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#container {
+    margin: 3rem auto;
+    background: var(--bg-recipe);
+    padding: 3rem 1.5rem;
+    border-radius: 10px;
+}
+#container header #waffleImg {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#container header #waffleImg:hover {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+figcaption {
+    text-align: right;
+    font-size: var(--footer-and-subtitles-of-image);
+    color: var(--footer-and-subtitles);
+}
+h1 {
+    font-size: var(--footer-and-subtitles-of-image);
+    color: var(--title-and-caption);
+    text-align: center;
+    margin: 1rem;
+}
+h2 {
+    font-size: var(--ft-title);
+    color: var(--title-and-caption);
+    text-align: center;
+    margin: 3rem auto 1rem;
+}
+li {
+    font-size: var(--list-and-paragraphs);
+    color: var(--other-text);
+}
+p {
+    font-size: var(--list-and-paragraphs);
+    color: var(--other-text);
+}
+#container #ingredients #listIngredients {
+    line-height: 26px;
+    list-style-position: inside;
+}
+
+#container #preparation #listPreparation {
+    line-height: 26px;
+    list-style-position: inside;
+}
